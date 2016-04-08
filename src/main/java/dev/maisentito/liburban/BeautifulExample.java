@@ -15,7 +15,7 @@ class BeautifulExample {
 	public static void main(final String[] args) {
 		if (args.length < 1) {
 			System.out.println("Usage:");
-			System.out.println("\tliburban TERM [LIMIT=0 [FROM=0]]");
+			System.out.println("	liburban TERM [LIMIT=0 [FROM=0]]");
 			return;
 		}
 
@@ -37,14 +37,14 @@ class BeautifulExample {
 					continue;
 				}
 				System.out.println("Word:");
-				System.out.println("\t" + BeautifulExample.bold(def.getWord()));
+				System.out.println("	" + BeautifulExample.bold(def.getWord()));
 				System.out.println("Definition:");
-				System.out.println("\t" + def.getDefinition().replace("\n", "\n\t"));
+				System.out.println("	" + def.getDefinition().replace("\n", "\n	"));
 				System.out.println();
 				System.out.println("Examples:");
-				System.out.println("\t" + def.getExample().replace("\n", "\n\t"));
+				System.out.println("	" + def.getExample().replace("\n", "\n	"));
 				System.out.println();
-				System.out.format("Up: %d\tDown: %d\n", def.getThumbsUp(), def.getThumbsDown());
+				System.out.format("Up: %d	Down: %d\n", def.getThumbsUp(), def.getThumbsDown());
 				if (++count >= limit) {
 					break;
 				}

@@ -2,10 +2,10 @@ package com.almightyalpaca.discord.bot.plugin.urbandictionary;
 
 import java.io.IOException;
 
-import com.almightyalpaca.discord.bot.system.command.AbstractCommand;
-import com.almightyalpaca.discord.bot.system.command.annotation.Command;
+import com.almightyalpaca.discord.bot.system.command.Command;
+import com.almightyalpaca.discord.bot.system.command.CommandHandler;
 import com.almightyalpaca.discord.bot.system.command.arguments.special.Rest;
-import com.almightyalpaca.discord.bot.system.events.CommandEvent;
+import com.almightyalpaca.discord.bot.system.events.commands.CommandEvent;
 import com.almightyalpaca.discord.bot.system.exception.PluginLoadingException;
 import com.almightyalpaca.discord.bot.system.exception.PluginUnloadingException;
 import com.almightyalpaca.discord.bot.system.plugins.Plugin;
@@ -18,13 +18,13 @@ import net.dv8tion.jda.MessageBuilder;
 
 public class UrbanDictionaryPlugin extends Plugin {
 
-	class LanguageCommand extends AbstractCommand {
+	class LanguageCommand extends Command {
 
 		public LanguageCommand() {
 			super("define", "Defines the expression", "language [text]");
 		}
 
-		@Command(dm = true, guild = true, async = true)
+		@CommandHandler(dm = true, guild = true, async = true)
 		public void onCommand(final CommandEvent event, final Rest text) {
 			final MessageBuilder builder = new MessageBuilder();
 

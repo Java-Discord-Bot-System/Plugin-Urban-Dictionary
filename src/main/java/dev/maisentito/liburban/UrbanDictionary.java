@@ -64,7 +64,8 @@ public final class UrbanDictionary {
 	}
 
 	/**
-	 * Returns a {@link dev.maisentito.liburban.Results} object containing search results for the definition of the term <code>term</code>
+	 * Returns a {@link dev.maisentito.liburban.Results} object containing search results for the definition of the term
+	 * <code>term</code>
 	 *
 	 * @param term
 	 *            the term to search for

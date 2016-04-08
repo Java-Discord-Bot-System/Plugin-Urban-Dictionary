@@ -43,9 +43,11 @@ public class Results {
 	}
 
 	/**
-	 * Returns the type of results, either {@link dev.maisentito.liburban.Results.Type#EXACT} or {@link dev.maisentito.liburban.Results.Type#NO_RESULTS}
+	 * Returns the type of results, either {@link dev.maisentito.liburban.Results.Type#EXACT} or
+	 * {@link dev.maisentito.liburban.Results.Type#NO_RESULTS}
 	 *
-	 * @return the type of results, either {@link dev.maisentito.liburban.Results.Type#EXACT} or {@link dev.maisentito.liburban.Results.Type#NO_RESULTS}
+	 * @return the type of results, either {@link dev.maisentito.liburban.Results.Type#EXACT} or
+	 *         {@link dev.maisentito.liburban.Results.Type#NO_RESULTS}
 	 */
 	public Type getType() {
 		return this.mType;
